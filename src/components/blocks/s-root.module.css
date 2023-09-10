@@ -1,0 +1,177 @@
+.root {
+  --spc: .5rem;
+  --spc-half: calc(var(--spc) / 2);
+  --spc-double: calc(var(--spc) * 2);
+
+  --content-spacing-h: var(--spc-double);
+  --content-spacing-v: var(--spc);
+  --content-max-width: 36em;
+
+  --breakpoint-m: 600px;
+  
+  --body-font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+  /* --body-font-family: Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif; */
+  --cursive-font-family: Superclarendon, 'Bookman Old Style', 'URW Bookman', 'URW Bookman L', 'Georgia Pro', Georgia, serif;
+  --mono-font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  --heading-font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  --heading-font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+
+  /* half golden scale ratio */
+  --type-scale-ratio: calc(1 + 0.618 / 2);
+
+  /*
+   * should be calc(1em * pow(var(--type-scale-ratio), N));
+   * but pow() is only supported on firefox 112+
+   */
+  --font-size-0: 0.8em;
+  --font-size-1: 1em;
+  --font-size-2: calc(1em * var(--type-scale-ratio));
+  --font-size-3: calc(1em * var(--type-scale-ratio) * var(--type-scale-ratio));
+  --font-size-4: calc(1em * var(--type-scale-ratio) * var(--type-scale-ratio) * var(--type-scale-ratio));
+  --font-size-5: calc(1em * var(--type-scale-ratio) * var(--type-scale-ratio) * var(--type-scale-ratio) * var(--type-scale-ratio));
+
+  --nord0: 46, 52, 64;
+  --nord1: 59, 66, 82;
+  --nord2: 67, 76, 94;
+  --nord3: 76, 86, 106;
+  --nord4: 216, 222, 233;
+  --nord5: 229, 233, 240;
+  --nord6: 236, 239, 244;
+  --nord4: 190, 200, 218;
+  --nord5: 216, 222, 233;
+  --nord6: 236, 239, 244;
+  --nord7: 143, 188, 187;
+  --nord8: 136, 192, 208;
+  --nord9: 129, 161, 193;
+  --nord10: 94, 129, 172;
+  --nord11: 191, 97, 106;
+  --nord12: 208, 135, 112;
+  --nord13: 235, 203, 139;
+  --nord14: 163, 190, 140;
+  --nord15: 180, 142, 173;
+
+  --primary-bg-color: rgb(var(--nord6));
+  --primary-bg-color-strong: rgb(var(--nord5));
+  --primary-fg-color: rgb(var(--nord0));
+  --primary-fg-color-strong: rgb(var(--nord2));
+  --primary-accent-color: rgb(var(--nord10));
+  --primary-accent-color-strong: rgb(var(--nord9));
+  --primary-border-color: rgb(var(--nord3));
+  --primary-shadow-opacity: 0.4;
+  --primary-shadow-color: rgba(var(--nord0), var(--primary-shadow-opacity));
+  --secondary-bg-color: rgb(var(--nord5));
+  --secondary-bg-color-strong: rgb(var(--nord4));
+  --secondary-fg-color: rgb(var(--nord0));
+  --secondary-fg-color-strong: rgb(var(--nord2));
+  --secondary-accent-color: rgb(var(--nord10));
+  --secondary-accent-color-strong: rgb(var(--nord9));
+  --secondary-border-color: rgb(var(--nord2));
+  --secondary-shadow-opacity: 0.4;
+  --secondary-shadow-color: rgba(var(--nord0), var(--secondary-shadow-opacity));
+  --tertiary-bg-color: rgb(var(--nord1));
+  --tertiary-bg-color-strong: rgb(var(--nord2));
+  --tertiary-fg-color: rgb(var(--nord4));
+  --tertiary-fg-color-strong: rgb(var(--nord6));
+  --tertiary-accent-color: rgb(var(--nord8));
+  --tertiary-accent-color-strong: rgb(var(--nord7));
+  --tertiary-border-color: rgb(var(--nord3));
+  --tertiary-shadow-opacity: 0.4;
+  --tertiary-shadow-color: rgba(var(--nord0), var(--inverted-shadow-opacity));
+  --inverted-bg-color: rgb(var(--nord1));
+  --inverted-bg-color-strong: rgb(var(--nord2));
+  --inverted-fg-color: rgb(var(--nord4));
+  --inverted-fg-color-strong: rgb(var(--nord6));
+  --inverted-accent-color: rgb(var(--nord8));
+  --inverted-accent-color-strong: rgb(var(--nord7));
+  --inverted-border-color: rgb(var(--nord3));
+  --inverted-shadow-opacity: 0.4;
+  --inverted-shadow-color: rgba(var(--nord0), var(--inverted-shadow-opacity));
+
+  --border-width: 1px;
+
+  --quote-open: '“';
+  --quote-close: '”';
+
+  color: var(--fg-color);
+  background-color: var(--bg-color);
+  line-height: 1.5;
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.root,
+.root button
+{
+  font-family: var(--body-font-family);
+  font-size: var(--font-size-1);
+}
+
+.root main {
+  display: block;
+}
+
+.root a,
+.root a:link {
+  color: var(--accent-color);
+}
+
+.root a:hover,
+.root a:active {
+  color: var(--accent-color-strong);
+}
+
+.root h1,
+.root h2,
+.root h3,
+.root h4 {
+  font-family: var(--heading-font-family);
+  line-height: 1;
+}
+
+.root h1 { font-size: var(--font-size-5); }
+.root h2 { font-size: var(--font-size-4); }
+.root h3 { font-size: var(--font-size-3); }
+.root h4 { font-size: var(--font-size-2); }
+.root h5 { font-size: var(--font-size-1); }
+.root h6 { font-size: var(--font-size-1); }
+
+.root h1 {
+  font-weight: 200;
+  letter-spacing: -0.033em;
+}
+
+.root h2 {
+  font-weight: 300;
+  letter-spacing: -0.033em;
+}
+
+.root h3 {
+  font-weight: 600;
+  letter-spacing: -0.033em;
+}
+
+.root h4 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.root h5,
+.root h6 {
+  font-weight: 700; /* Segoe UI extrabold */
+  text-transform: uppercase;
+  letter-spacing: .125em;
+}
+
+.root ul,
+.root ol {
+  margin: 0;
+}
+
+.root small,
+.root .small
+{ font-size: var(--font-size-0); }
+
+.root blockquote {
+  padding: calc(var(--content-spacing-v) * 2) calc(var(--content-spacing-h) * 2);
+}

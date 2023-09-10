@@ -1,0 +1,24 @@
+<svg
+    viewBox="120 0 16 8"
+    role="img"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+    <style>
+    </style>
+    <defs>
+        <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%"   stop-color="#DCE0DF00"/>
+            <stop offset="50%"  stop-color="#DCE0DFFF"/>
+            <stop offset="100%" stop-color="#DCE0DF00"/>
+        </linearGradient>
+    </defs>
+    <path
+        fill="#393939"
+        d="
+            M 121 8
+            L 128 0
+            L 135 8
+        "
+    />
+</svg>

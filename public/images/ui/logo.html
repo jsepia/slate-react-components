@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body style="background: #0f0; padding: 0; margin: 0; width: 480px;">
+    <svg
+        id="site-logo"
+        viewBox="240 0 480 240"
+        aria-labelledby="logo-title logo-description"
+        role="img"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        version="1.1"
+    >
+        <title id="logo-title">The Art and Works of Julio Sepia</title>
+        <description id="logo-description">An ornate wheel drawn in ink</description>
+        <style>
+            @import url("../../../css/fonts/mangaba/mangaba.css");
+
+            text {
+                font-size: 27px;
+                font-family: "Mangaba", serif;
+                text-anchor: middle;
+                text-transform: uppercase;
+            }
+
+            .text.medium {
+                font-size: 40px;
+            }
+
+            .text.large {
+                font-size: 60px;
+            }
+
+            .stroke {
+                fill: none;
+                stroke: black;
+                stroke-width: 3px;
+            }
+
+            .stroke.thick {
+                stroke-width: 7px;
+            }
+        </style>
+        <defs>
+            <defs>
+                <linearGradient
+                    id="bg-to-transparent"
+                    x1="0%" y1="0%"
+                    x2="0%" y2="100%"
+                >
+                    <stop offset="0%" style="stop-color:rgb(226, 223, 218)"/>
+                    <stop offset="50%" style="stop-color:rgb(226, 223, 218)"/>
+                    <stop offset="100%" style="stop-color:rgb(226, 223, 218, 0)"/>
+                </linearGradient>
+                <radialGradient
+                    id="circle-shadow"
+                    x1="0%" y1="0%"
+                    x2="0%" y2="100%"
+                >
+                    <stop offset="0%" style="stop-color:rgb(0, 0, 0)"/>
+                    <stop offset="83.4%" style="stop-color:rgb(0, 0, 0)"/>
+                    <stop offset="100%" style="stop-color:rgb(0, 0, 0, 0)"/>
+                </radialGradient>
+            </defs>
+            <g id="pyramid">
+                <path
+                    class="stroke"
+                    style="fill: black;"
+                    d="
+                        M-50   0
+                        L  0 -50
+                        L 50   0
+                        L  0   0
+                        L  0 -50
+                    "
+                />
+            </g>
+            <mask id="titles">
+                <circle
+                    cx="480"
+                    cy="0"
+                    r="162"
+                    fill="white"
+                />
+                <use href="#pyramid" x="480" y="172"/>
+                <use href="#pyramid" x="518" y="180"/>
+                <use href="#pyramid" x="442" y="180"/>
+                <path
+                    class="stroke"
+                    id="title-over-over"
+                    d="
+                        M280 50
+                        a800 800 2 0 1 400 0
+                    "
+                />
+                <path
+                    class="stroke"
+                    id="title-over"
+                    d="
+                        M280 80
+                        a1000 1000 2 0 1 400 0
+                    "
+                />
+                <path
+                    class="stroke"
+                    id="title-path"
+                    d="
+                        M280 125
+                        a1200 1200 2 0 1 400 0
+                    "
+                />
+                <!-- <text class="text medium">
+                    <textPath
+                        href="#title-over"
+                        startOffset="50%"
+                    >The art and works of</textPath>
+                </text>
+                <text class="text large">
+                    <textPath
+                        href="#title-path"
+                        startOffset="50%"
+                    >Julio Sepia</textPath>
+                </text> -->
+                <!-- <text class="text medium">
+                    <textPath
+                        href="#title-over"
+                        startOffset="50%"
+                    >The art and works of</textPath>
+                </text>
+                <text class="text large">
+                    <textPath
+                        href="#title-path"
+                        startOffset="50%"
+                    >Julio Sepia</textPath>
+                </text> -->
+            </mask>
+        </defs>
+        <clipPath id="inner-circle-mask">
+            <circle
+                cx="480" cy="0"
+                r="162"
+                fill="white"
+            />
+        </clipPath>
+        <clipPath id="inner-circle-mask-inv">
+            <path
+                d="
+                    M310 0
+                    a170 170 180 0 0 340 0
+                    L720   0
+                    L770 240
+                    L240 240
+                    L240   0
+                "
+            />
+        </clipPath>
+        <clipPath id="outer-circle-mask-inv">
+            <path
+                d="
+                    M280 0
+                    a200 200 180 0 0 400 0
+                    L720   0
+                    L720 240
+                    L240 240
+                    L240   0
+                "
+            />
+        </clipPath>
+        <g
+            id="bg"
+            clip-path="url(#outer-circle-mask-inv)"
+        >
+            <circle
+                style="fill: url(#circle-shadow)"
+                cx="480"
+                cy="-40"
+                r="240"
+            />
+        </g>
+        <g id="numbers-wheel">
+            <circle
+                class="stroke thick"
+                style="fill: url(#bg-to-transparent)"
+                cx="480"
+                cy="0"
+                r="200"
+            />
+            <circle
+                class="stroke"
+                cx="480"
+                cy="0"
+                r="190"
+            />
+        </g>
+        <rect
+            fill="#000"
+            x="0"
+            y="0"
+            width="960"
+            height="240"
+            mask="url(#titles)"
+            clip-path="url(#inner-circle-mask)"
+        />
+        <image
+            href="textures/ornate-wheel-quarter.png"
+            x="480"
+            y="0"
+            height="238"
+            width="238"
+            clip-path="url(#inner-circle-mask-inv)"
+        />
+        <image
+            href="textures/ornate-wheel-quarter.png"
+            x="480"
+            y="0"
+            height="238"
+            width="238"
+            clip-path="url(#inner-circle-mask-inv)"
+            transform="rotate(90 480 0)"
+        />
+        <g transform="translate(0, -2)">
+            <text class="text medium">
+                <textPath
+                    href="#title-over"
+                    startOffset="50%"
+                    fill="rgb(226, 223, 218)"
+                >The art and works of</textPath>
+            </text>
+            <text class="text large">
+                <textPath
+                    href="#title-path"
+                    startOffset="50%"
+                    fill="rgb(226, 223, 218)"
+                >Julio Sepia</textPath>
+            </text>
+        </g>
+    </svg>
+
+</body>
+</html>

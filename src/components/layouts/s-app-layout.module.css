@@ -1,0 +1,58 @@
+.appLayout {
+  grid-template-areas: "nav"
+    "sidebar"
+    "main";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  background-color: var(--bg-color);
+}
+
+/* override display: flex */
+body .appLayout {
+  display: grid;
+}
+
+.appLayoutNav {
+  grid-area: nav;
+  border-bottom: solid var(--border-width) var(--border-color);
+}
+
+.appLayoutSidebar {
+  grid-area: sidebar;
+  border-right: solid var(--border-width) var(--border-color);
+}
+
+.appLayoutMain {
+  grid-area: main;
+  background-color: var(--bg-color-strong);
+}
+
+.appLayoutMainNoGutters {
+  padding: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .appLayout {
+    grid-template-areas: "nav nav"
+      "sidebar main";
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+  }
+
+  .appLayoutNav,
+  .appLayoutMain {
+    overflow-y: auto;
+  }
+
+  .appLayoutSidebar {
+    min-width: 15em;
+  }
+
+  .fixedPosition {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}

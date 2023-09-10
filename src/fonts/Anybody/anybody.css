@@ -1,0 +1,10 @@
+@font-face {
+  font-family: Anybody;
+  font-style: normal;
+  src: url('./Anybody-VariableFont_wdth,wght.woff2');
+}
+@font-face {
+  font-family: Anybody;
+  font-style: italic;
+  src: url('./Anybody-Italic-VariableFont_wdth,wght.woff2');
+}

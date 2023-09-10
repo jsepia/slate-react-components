@@ -1,0 +1,21 @@
+.block {
+}
+
+.block[data-align=right] {
+  text-align: right;
+}
+
+.padded,
+.responsivePadding {
+  padding: var(--content-spacing-v) var(--content-spacing-h);
+}
+
+@media screen and (min-width: 600px) {
+  .responsivePadding {
+    padding: calc(var(--content-spacing-v) * 2) calc(var(--content-spacing-h) * 2);
+  }
+}
+
+.withBackground {
+  background-color: var(--bg-color);
+}

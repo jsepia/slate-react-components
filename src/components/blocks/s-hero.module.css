@@ -1,0 +1,12 @@
+.hero {
+  background-color: var(--bg-color);
+  /* margin-bottom: calc(var(--content-spacing-v) * 4); */
+  padding: 0.01px 0;
+  box-shadow: 0 .25em .5em var(--shadow-color);
+}
+
+.hero header,
+.hero .body,
+.hero footer {
+  padding: var(--content-spacing-v) var(--content-spacing-h);
+}

@@ -1,0 +1,9 @@
+.gridLayout {
+  display: inline-grid;
+  /* width: 100%; */
+  grid-auto-flow: column;
+}
+
+.withGutters {
+  gap: calc(var(--content-spacing-h));
+}

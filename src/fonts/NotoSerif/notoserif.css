@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Noto Serif'), url('./NotoSerif-ExtraLight.woff2');
+}
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Noto Serif'), url('./NotoSerif-Light.woff2');
+}
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Serif'), url('./NotoSerif-Regular.woff2');
+}
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Noto Serif'), url('./NotoSerif-Medium.woff2');
+}
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Noto Serif'), url('./NotoSerif-SemiBold.woff2');
+}
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Serif'), url('./NotoSerif-Bold.woff2');
+}
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Noto Serif'), url('./NotoSerif-ExtraBold.woff2');
+}
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Noto Serif'), url('./NotoSerif-Black.woff2');
+}

@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'Noto Serif Condensed';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Noto Serif Condensed'), url('./NotoSerif-CondensedExtraLight.woff2');
+}
+@font-face {
+  font-family: 'Noto Serif Condensed';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Noto Serif Condensed'), url('./NotoSerif-CondensedLight.woff2');
+}
+@font-face {
+  font-family: 'Noto Serif Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Serif Condensed'), url('./NotoSerif-Condensed.woff2');
+}
+@font-face {
+  font-family: 'Noto Serif Condensed';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Noto Serif Condensed'), url('./NotoSerif-CondensedMedium.woff2');
+}
+@font-face {
+  font-family: 'Noto Serif Condensed';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Noto Serif Condensed'), url('./NotoSerif-CondensedSemiBold.woff2');
+}
+@font-face {
+  font-family: 'Noto Serif Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Serif Condensed'), url('./NotoSerif-CondensedBold.woff2');
+}
+@font-face {
+  font-family: 'Noto Serif Condensed';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Noto Serif Condensed'), url('./NotoSerif-CondensedExtraBold.woff2');
+}
+@font-face {
+  font-family: 'Noto Serif Condensed';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Noto Serif Condensed'), url('./NotoSerif-CondensedBlack.woff2');
+}

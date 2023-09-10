@@ -1,0 +1,89 @@
+.textContent {
+}
+
+.textContent > * {
+  /* margin-top: var(--content-spacing-v);
+  margin-bottom: var(--content-spacing-v);
+  margin-left: var(--content-spacing-h);
+  margin-right: var(--content-spacing-h); */
+}
+
+.textContent > * + * {
+  margin-top: 1em;
+}
+
+.textContent > * + h1,
+.textContent > * + h2,
+.textContent > * + h3,
+.textContent > * + h4,
+.textContent > * + h5,
+.textContent > * + h6 {
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+
+.textContent > h1,
+.textContent > h2,
+.textContent > h3,
+.textContent > h4,
+.textContent > h5,
+.textContent > h6 {
+  margin-left: calc(var(--content-spacing-h) * -1);
+  margin-right: calc(var(--content-spacing-h) * -1);
+  padding-left: var(--content-spacing-h);
+  padding-right: var(--content-spacing-h);
+}
+
+.textContent.noGutters > h1,
+.textContent.noGutters > h2,
+.textContent.noGutters > h3,
+.textContent.noGutters > h4,
+.textContent.noGutters > h5,
+.textContent.noGutters > h6 {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.textContent > ul,
+.textContent > ol {
+  padding: 0 0 0 calc(var(--content-spacing-h) * 2);
+}
+
+.textContent > blockquote {
+  position: relative;
+  padding: var(--content-spacing-v) calc(var(--content-spacing-h) * 3);
+  font-style: italic;
+  font-size: var(--font-size-2);
+  font-family: var(--cursive-font-family);
+}
+
+.textContent > blockquote::before,
+.textContent > blockquote::after {
+  display: block;
+  content: ' ';
+  position: absolute;
+  color: var(--border-color);
+  font-size: 1.5em;
+  line-height: 1;
+}
+
+.textContent > blockquote::before {
+  content: var(--quote-open);
+  top: var(--content-spacing-v);
+  left: var(--content-spacing-h);
+}
+
+.textContent > blockquote::after {
+  content: var(--quote-close);
+  bottom: var(--content-spacing-v);
+  right: var(--content-spacing-h);
+}
+
+.restrictWidthForReadability {
+  /* margin-left: auto;
+  margin-right: auto; */
+  max-width: var(--content-max-width);
+  flex: 1 1 auto;
+}

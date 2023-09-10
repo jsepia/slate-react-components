@@ -1,0 +1,81 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.nav[data-align=right] {
+  justify-content: flex-end;
+}
+
+.nav .body > ul {
+  flex: 0 0 auto;
+  align-items: stretch;
+}
+
+.nav > * + * {
+  border-top: solid 1px var(--border-color);
+}
+
+.nav.compact {
+  flex-direction: row;
+}
+
+.nav.compact > * + * {
+  border-top: none;
+  margin-left: auto;
+}
+
+.nav.compact > ul {
+  flex-direction: row;
+}
+
+.nav ul,
+.nav li {
+  list-style: none;
+}
+
+.nav ul {
+  display: flex;
+  flex-direction: column;
+
+  /* reset SlateTextContent padding */
+  padding-left: 0;
+}
+
+.nav h1,
+.nav h2,
+.nav h3,
+.nav h4,
+.nav .title,
+.nav .brand {
+  font-size: var(--font-size-2);
+  font-weight: 500;
+}
+
+.nav > ul > li {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.nav > ul > li > span,
+.nav > ul > li > a,
+.nav > ul > li > button,
+.nav > ul > li > h1,
+.nav > ul > li > h2,
+.nav > ul > li > h3,
+.nav > ul > li > h4,
+.nav > ul > li > h5,
+.nav > ul > li > h6 {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  justify-content: center;
+  padding: var(--content-spacing-v) var(--content-spacing-h);
+}
+
+.nav a {
+  text-decoration: none;
+}

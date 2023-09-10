@@ -1,0 +1,9 @@
+.pageContentHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  box-sizing: border-box;
+
+  /* awkward math */
+  min-height: calc(var(--header-height) + 2 * var(--content-spacing-v));
+}

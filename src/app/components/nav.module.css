@@ -1,0 +1,88 @@
+.navHeader {
+  background-image: url('./slate-swish.png');
+  background-position: right 1rem bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-size-1);
+  font-weight: 500;
+  text-transform: lowercase;
+  align-self: start;
+  position: relative;
+}
+
+a.logo,
+a.logo:link,
+a.logo:hover,
+a.logo:active {
+  text-decoration: none;
+}
+
+.logo > span {
+  display: flex;
+  flex: 0 0 auto;
+}
+
+.logo > .wordmarkPt1,
+.logo > .wordmarkPt2,
+.logo > .wordmarkPt3 {
+  color: var(--fg-color);
+  text-shadow: 0 0 .125rem var(--jade);
+}
+
+.logo:hover > .wordmarkPt1,
+.logo:hover > .wordmarkPt2,
+.logo:hover > .wordmarkPt3,
+.logo:active > .wordmarkPt1,
+.logo:active > .wordmarkPt2,
+.logo:active > .wordmarkPt3 {
+  color: var(--fg-color-strong);
+}
+
+.logo > .wordmarkPt2,
+.logo > .wordmarkPt3 {
+  line-height: 1;
+}
+
+.logo > .wordmarkPt1 {
+  font-weight: 300;
+  font-size: 2em;
+  line-height: 0.85;
+  font-family: var(--heading-font-family);
+}
+
+.logo > .wordmarkPt2 {
+  font-weight: 500;
+  font-size: 1.35em;
+  font-family: var(--heading-font-family);
+}
+
+.logo > .wordmarkPt3 {
+  font-weight: 600;
+  font-size: 1.16em;
+  font-family: var(--heading-font-family);
+}
+
+.logo > .betaLabel {
+  font-family: var(--body-font-family);
+  position: absolute;
+  display: block;
+  left: calc(100% + 0.5em);
+  bottom: 0;
+  font-size: var(--font-size-0);
+  text-transform: uppercase;
+  line-height: 1.33;
+}
+
+.logoContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  min-height: var(--header-height);
+}

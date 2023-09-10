@@ -1,0 +1,64 @@
+<svg
+    id="site-logo"
+    viewBox="0 0 480 52"
+    role="img"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+    <style>
+        @import url("../../../css/fonts/mangaba/mangaba.css");
+
+        text {
+            font-size: 27px;
+            font-family: "Mangaba", serif;
+            text-anchor: middle;
+            text-transform: uppercase;
+            fill: rgba(226, 223, 218, .38);
+        }
+    </style>
+    <defs>
+        <g id="numbers">
+            <rect
+                x="0"
+                y="0"
+                width="480"
+                height="52"
+                fill="black"
+            />
+            <path
+                d="
+                    M0   35
+                    L480 35
+                "
+                stroke="rgba(226, 223, 218, .38)"
+                stroke-width="2"
+            />
+            <path
+                d="
+                    M0   5
+                    L480 5
+                "
+                stroke="rgba(226, 223, 218, .38)"
+                stroke-width="2"
+            />
+            <text   x="0" y="30">I</text>
+            <text  x="40" y="30">II</text>
+            <text  x="80" y="30">III</text>
+            <text x="120" y="30">IV</text>
+            <text x="160" y="30">V</text>
+            <text x="200" y="30">VI</text>
+            <text x="240" y="30">VII</text>
+            <text x="280" y="30">VIII</text>
+            <text x="320" y="30">IX</text>
+            <text x="360" y="30">X</text>
+            <text x="400" y="30">XI</text>
+            <text x="440" y="30">XII</text>
+            <text x="480" y="30">I</text>
+        </g>
+    </defs>
+    <use
+        xlink:href="#numbers"
+        x="0"
+        y="0"
+    ></use>
+</svg>

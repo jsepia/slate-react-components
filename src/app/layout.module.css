@@ -1,0 +1,85 @@
+@import url('../fonts/NotoSans/notosans.css');
+@import url('../fonts/NotoSans/notosans-italic.css');
+@import url('../fonts/NotoSerif/notoserif.css');
+@import url('../fonts/NotoSerif/notoserif-condensed.css');
+@import url('../fonts/Anybody/anybody.css');
+
+.root {
+  --type-scale-ratio: calc(1 + 0.618 * 0.5);
+  --content-spacing-v: calc(var(--spc) * 1.618);
+  --heading-font-family: 'Noto Serif Condensed', Georgia, serif;
+  --heading-font-family: Anybody, Roboto, Tahoma, Verdana, sans-serif;
+  --body-font-family: 'Noto Sans', 'Helvetica Neue', 'Segoe UI', Arial, serif;
+  --border-width: 2px;
+
+  --night-rgb-values: 27, 27, 28;
+  --night: rgb(var(--night-rgb-values));
+  --night-strong: #182427;
+  --clouds: hsl(173, 5%, 75%);
+  --clouds-strong: hsl(98, 12%, 88%);
+  --white: hsl(0, 0%, 100%);
+  --earth: hsl(28, 2%, 16%);
+  --earth-strong: hsl(48, 36%, 24%);
+  --gold: hsl(48, 36%, 18%);
+  --gold-strong: hsl(32, 33%, 39%);
+  --honey: hsl(38, 100%, 72%);
+  --honey-strong: hsl(40, 70%, 80%);
+  --jade: hsl(106, 45%, 60%);
+  --jade-strong: hsl(95, 55%, 70%);
+  --turquoise: rgb(74, 133, 140);
+  --turquoise-strong: hsl(186, 66%, 60%);
+  --ruby: hsl(347, 70%, 70%);
+  --ruby-strong: hsl(350, 80%, 90%);
+  
+  --inverted-bg-color: var(--night);
+  --inverted-bg-color-strong: var(--night-strong);
+  --inverted-fg-color: var(--clouds);
+  --inverted-fg-color-strong: var(--clouds-strong);
+  --inverted-accent-color: var(--honey);
+  --inverted-accent-color-strong: var(--honey-strong);
+  --inverted-border-color: var(--earth-strong);
+  --inverted-shadow-opacity: 0.4;
+  --inverted-shadow-color: rgba(var(--night-rgb-values), var(--inverted-shadow-opacity));
+  
+  --tertiary-bg-color: var(--earth);
+  --tertiary-bg-color-strong: var(--earth-strong);
+  --tertiary-fg-color: var(--honey);
+  --tertiary-fg-color-strong: var(--honey-strong);
+  --tertiary-accent-color: var(--clouds);
+  --tertiary-accent-color-strong: var(--clouds-strong);
+  --tertiary-border-color: var(--earth-strong);
+  --tertiary-shadow-opacity: 0.4;
+  --tertiary-shadow-color: rgba(var(--night-rgb-values), var(--inverted-shadow-opacity));
+  
+  --secondary-bg-color: var(--clouds);
+  --secondary-bg-color-strong: var(--clouds-strong);
+  --secondary-fg-color: var(--night);
+  --secondary-fg-color-strong: var(--night-strong);
+  --secondary-accent-color: var(--turquoise);
+  --secondary-accent-color-strong: var(--turquoise-strong);
+  --secondary-border-color: var(--earth-strong);
+  --secondary-shadow-opacity: 0.4;
+  --secondary-shadow-color: rgba(var(--night-rgb-values), var(--inverted-shadow-opacity));
+  
+  --primary-bg-color: var(--white);
+  --primary-bg-color-strong: var(--clouds-strong);
+  --primary-fg-color: var(--night);
+  --primary-fg-color-strong: var(--night-strong);
+  --primary-accent-color: var(--turquoise);
+  --primary-accent-color-strong: var(--turquoise-strong);
+  --primary-border-color: var(--earth-strong);
+  --primary-shadow-opacity: 0.4;
+  --primary-shadow-color: rgba(var(--night-rgb-values), var(--inverted-shadow-opacity));
+
+  --positive-color: var(--jade);
+  --negative-color: var(--ruby);
+}
+
+.root h1,
+.root h2,
+.root h3,
+.root h4 {
+  text-transform: lowercase;
+}
+
+

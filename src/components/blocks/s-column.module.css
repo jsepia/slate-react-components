@@ -1,0 +1,8 @@
+.slateColumn {
+
+}
+
+@media screen and (min-width: 600px) {
+  .slateColumn[data-span=2] {
+  }
+}

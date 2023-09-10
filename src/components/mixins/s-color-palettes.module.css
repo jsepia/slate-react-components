@@ -1,0 +1,51 @@
+.inverted {
+  --bg-color: var(--inverted-bg-color);
+  --bg-color-strong: var(--inverted-bg-color-strong);
+  --fg-color: var(--inverted-fg-color);
+  --fg-color-strong: var(--inverted-fg-color-strong);
+  --accent-color: var(--inverted-accent-color);
+  --accent-color-strong: var(--inverted-accent-color-strong);
+  --border-color: var(--inverted-border-color);
+  --shadow-color: var(--inverted-shadow-color);
+
+  color: var(--fg-color);
+}
+
+.tertiary {
+  --bg-color: var(--tertiary-bg-color);
+  --bg-color-strong: var(--tertiary-bg-color-strong);
+  --fg-color: var(--tertiary-fg-color);
+  --fg-color-strong: var(--tertiary-fg-color-strong);
+  --accent-color: var(--tertiary-accent-color);
+  --accent-color-strong: var(--tertiary-accent-color-strong);
+  --border-color: var(--tertiary-border-color);
+  --shadow-color: var(--tertiary-shadow-color);
+
+  color: var(--fg-color);
+}
+
+.secondary {
+  --bg-color: var(--secondary-bg-color);
+  --bg-color-strong: var(--secondary-bg-color-strong);
+  --fg-color: var(--secondary-fg-color);
+  --fg-color-strong: var(--secondary-fg-color-strong);
+  --accent-color: var(--secondary-accent-color);
+  --accent-color-strong: var(--secondary-accent-color-strong);
+  --border-color: var(--secondary-border-color);
+  --shadow-color: var(--secondary-shadow-color);
+
+  color: var(--fg-color);
+}
+
+.primary {
+  --bg-color: var(--primary-bg-color);
+  --bg-color-strong: var(--primary-bg-color-strong);
+  --fg-color: var(--primary-fg-color);
+  --fg-color-strong: var(--primary-fg-color-strong);
+  --accent-color: var(--primary-accent-color);
+  --accent-color-strong: var(--primary-accent-color-strong);
+  --border-color: var(--primary-border-color);
+  --shadow-color: var(--primary-shadow-color);
+
+  color: var(--fg-color);
+}

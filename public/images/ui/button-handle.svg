@@ -1,0 +1,38 @@
+<svg
+    width="50"
+    height="20"
+    viewBox="0 0 50 20"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="1.1"
+>
+    <style>
+        @import url("../../../css/fonts/mangaba/mangaba.css");
+
+        text {
+            font-size: 27px;
+            font-family: "Mangaba", serif;
+            text-transform: uppercase;
+        }
+
+        .text.medium {
+            font-size: 40px;
+        }
+
+        .text.large {
+            font-size: 60px;
+        }
+
+        .stroke {
+            fill: none;
+            stroke: black;
+            stroke-width: 3px;
+        }
+
+        .stroke.thick {
+            stroke-width: 7px;
+        }
+    </style>
+    <path
+    />
+</svg>
