@@ -5,6 +5,10 @@
   text-align: right;
 }
 
+.block[data-align=center] {
+  text-align: center;
+}
+
 .padded,
 .responsivePadding {
   padding: var(--content-spacing-v) var(--content-spacing-h);

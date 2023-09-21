@@ -6,16 +6,16 @@ import SlateTextContent from '@/components/blocks/s-text-content'
 import SlateDesignSystemFooter from './footer'
 import { SlateDesignSystemNavPage } from './pages'
 
-export const getStaticPaths = ({ locales }: ) => {
-  return {
-    paths: [
-      // if no `locale` is provided only the defaultLocale will be generated
-      { params: { slug: 'post-1' }, locale: 'en-US' },
-      { params: { slug: 'post-1' }, locale: 'fr' },
-    ],
-    fallback: true,
-  }
-}
+// export const getStaticPaths = ({ locales }: any) => {
+//   return {
+//     paths: [
+//       // if no `locale` is provided only the defaultLocale will be generated
+//       { params: { slug: 'post-1' }, locale: 'en-US' },
+//       { params: { slug: 'post-1' }, locale: 'fr' },
+//     ],
+//     fallback: true,
+//   }
+// }
 
 export default function SlateDesignSystemPage() {
   return (

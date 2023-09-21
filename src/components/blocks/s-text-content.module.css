@@ -1,6 +1,11 @@
 .textContent {
 }
 
+.textContent.textContentCentered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .textContent > * {
   /* margin-top: var(--content-spacing-v);
   margin-bottom: var(--content-spacing-v);

@@ -39,7 +39,6 @@ const nextConfig = {
     'js',
     'jsx',
     'md',
-    'mdx',
   ],
   i18n: {
     locales: ['en-US', 'ca-ES'],

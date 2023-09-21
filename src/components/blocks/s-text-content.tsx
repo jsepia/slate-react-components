@@ -10,6 +10,7 @@ extends CommonBlockProps, PropsWithChildren {
   footer?: React.ReactNode
   noGutters?: boolean
   fullWidth?: boolean
+  centered?: boolean
 }
 
 
@@ -19,6 +20,7 @@ export default function SlateTextContent(
   const {
     fullWidth,
     noGutters,
+    centered,
     children,
   } = props
 
@@ -38,6 +40,10 @@ export default function SlateTextContent(
   else if (typeof padded === 'undefined') {
     padded = true
     responsivePadding = true
+  }
+  
+  if (centered) {
+    classNames.push(styles.textContentCentered)
   }
 
   const blockProps: CommonBlockProps = {
